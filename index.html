@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Clive Tumbare</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
+    <meta name="author" content="Clive Tumbare">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile" id="profile">
+            <img src="images/me.jpg" alt="profile image" class="profile_img">
+            <span>Clive Tumbare</span>
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+        <nav id="primary-nav">
+            <a href="index.html">Home </a>
+            <a href="">Chamber</a>
+            <a href="">Final</a>
+            <a href="https://github.com/emmat24">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/clivetumbare/">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="general">
+        <section class="card" id="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </section>
+
+        <section class="card" id="location">
+            <h2>Bulawayo ,Zimbabwe</h2>
+            <div class="country_info">
+                <figure class="image-caption">
+                    <img src="images/zim_flag.png" alt="zimbabwe flag image" class="flag_img" id="arg_flag">
+                    <figcaption><em>Official Flag of Zimbabwe</em></figcaption>
+                </figure>
+            </div>
+        </section>
+        </div>
+        <div>
+        <section class="card" id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="resources">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <section id="coursesList"></section>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🧉 Clive Tumbare 🧉 Zimbanwe</p>
+        <img src="images/zim_flag.png" alt="zim flag image" class="flag_img" width="40" height="30">
+        <p id="lastModified"><span id="dateModified"></span></p>
+    </footer>
+</body>
+</html>
