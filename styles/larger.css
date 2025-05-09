@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #732255 ;
+    --primary-color: maroon;
     --secondary-color: #E55050;
-    --tertiary-color: #cd65f7;
-    --accent-color: #45d0e9;
-    --accent-color2: #97bbcc6e;
+    --tertiary-color: #09f7d7;
+    --accent-color: rgb(22, 32, 22);
+    --accent-color2: black;
 }
+    
 
 
 /*  ALL  */
