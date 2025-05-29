@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zimbabwe Chamber of Commerce homepage">
+  <meta name="author" content="Clive Tumbare">
+  <meta property="og:title" content="Chamber of Commerce home page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/world.ico">
+  <meta property="og:url" content="https://example.com/index.html">
+  <title>Zimbabwe Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/index-style.css">
+  <link rel="icon" href="images/world.ico">
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/slides.js" defer></script>
+  <script src="scripts/members.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Zimbabwe Chamber of Commerce" class="logo">
+      <h1>Zimbabwe Chamber of Commerce</h1>
+      <button type="button" class="hamburger" id="menu-toggle">☰</button>
+      <nav id="nav-menu" class="hidden">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+        <button type="button" class="dark-mode-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <div class="slider-box">
+    <ul>
+      <li>
+        <img src="images/bulawayo.jpg" alt="City of Bulawayo" loading="lazy">
+        <div class="text">
+          <h2>Welcome to the City of Kings</h2>
+          <button type="button" class="hero-button">Visit Now</button>
+        </div>
+      </li>
+      <li>
+        <img src="images/vicfalls.jpg" alt="Victoria Falls">
+        <div class="text">
+          <h2>Explore Majestic Victoria Falls</h2>
+          <button type="button" class="hero-button">Visit Now</button>
+        </div>
+      </li>
+      <li>
+        <img src="images/chinhoyi.jpg" alt="Chinhoyi Caves">
+        <div class="text">
+          <h2>Nature at Chinhoyi Caves</h2>
+          <button type="button" class="hero-button">Visit Now</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Homepage Summary -->
+    <section class="info-grid">
+      <article>
+        <h2>About the Chamber</h2>
+        <p>The Zimbabwe Chamber of Commerce promotes economic growth by supporting businesses, organizing events, and connecting members with national and international opportunities. We provide valuable services, represent commercial interests, and encourage partnerships across sectors.</p>
+      </article>
+
+      <article>
+        <h2>Events</h2>
+        <p>Upcoming business expos, training workshops, and member networking activities. Stay informed!</p>
+      </article>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+      <img src="images/business1.jpg" alt="Business community">
+      <img src="images/tourism1.jpg" alt="Zimbabwe tourism">
+      <img src="images/tradefair.jpg" alt="Trade fair exhibition">
+      <img src="images/lakekariba.jpg" alt="Lake Kariba view">
+    </section>
+
+    <!-- Attractions -->
+    <section class="attractions-section">
+      <h2>Top Zimbabwean Attractions</h2>
+      <h3>🏢 Business Attractions</h3>
+      <ul>
+        <li>Zimbabwe International Trade Fair (ZITF) – Bulawayo</li>
+        <li>Harare Agricultural Show – Harare</li>
+        <li>Hwange Mining & Energy Projects</li>
+        <li>Victoria Falls Tourism Council Business Hub</li>
+      </ul>
+
+      <h3>🌍 Tourism Highlights</h3>
+      <ul>
+        <li>Victoria Falls – One of the Seven Natural Wonders</li>
+        <li>Great Zimbabwe Ruins – Ancient stone civilization</li>
+        <li>Matobo Hills – Sacred cultural landscapes</li>
+        <li>Lake Kariba – Fishing and sunset cruises</li>
+      </ul>
+    </section>
+
+    <!-- Membership Levels Table -->
+    <section class="membership-table">
+      <h2>Membership Levels</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Membership Level</th>
+            <th>Joining Fee (USD)</th>
+            <th>Monthly Subscription (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Silver</td>
+            <td>$50</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>$100</td>
+            <td>$20</td>
+          </tr>
+          <tr>
+            <td>Platinum</td>
+            <td>$200</td>
+            <td>$35</td>
+          </tr>
+          <tr>
+            <td>Diamond</td>
+            <td>$500</td>
+            <td>$75</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Zimbabwe Chamber of Commerce</p>
+    <p>Bulawayo, City of Kings</p>
+    <p>Email: info@zimbabwechamber.org | Phone: (263) 123-2345</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/"><img src="images/social_facebook.webp" alt="facebook"></a>
+      <a href="https://www.twitter.com/"><img src="images/social_twitter.webp" alt="Twitter"></a>
+      <a href="https://www.instagram.com"><img src="images/social_instagram.webp" alt="Instagram"></a>
+    </div>
+    <p>WDD 231 Class Project | Clive Tumbare</p>
+    <p>&copy; <span id="currentyear"></span> 🚀 Clive Tumbare | Bulawayo, Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "family name": "Tumbare",
+    "move-date": "2019-05-25",
+    "number-of-people": 3,
+    "visited-by-bishopric": false,
+    "family-members": [
+        {
+            "name": "Mbaerre",
+            "gender": "Female",
+            "birthdate": "1994-10-19"
+        },
+        {
+            "name": "Gaer",
+            "gender": "male",
+            "birthdate": "1980-01-18"
+        },
+        {
+            "name": "Charles dome",
+            "gender": "Male",
+            "birthdate": "2002-12-10"
+        },
+        {
+            "name": "Wares ",
+            "gender": "Male",
+            "birthdate": "1986-15-09"
+        }
+    ]
+}

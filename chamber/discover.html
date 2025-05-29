@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="discover page ">
+    <meta name="author" content="Clive Tumbare">
+    <meta property="og:title" content="Chamber of Commerce discover page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="world.ico">
+    <meta property="og:url" content="https://example.com/directory.html">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <title>Discover Chamber page</title>
+    <link rel="icon" href="images/world.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Zimbabwe Chamber of Commerce" class="logo">
+            <h1>Join Chamber page</h1>
+            <button class="hamburger" id="menu-toggle">☰</button>
+            <nav id="nav-menu" class="hidden">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main class="discover-layout">
+        <section class="sidebar">
+            <div id="visitMessage"></div>
+        </section>
+        
+ <section class="gallery-section">
+      <h2>Our Zimbabwe Community in Pictures</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/Vic_Falls.jpg" alt="The Vic_Falls View">
+          <div class="overlay">Networking Event</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gorge.jpg" alt="Gorge Sites">
+          <div class="overlay">Business Forum</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/great_zim.jpg" alt="Great Zim Monuments">
+          <div class="overlay">Trade Expo</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gonarezhou.jpg" alt="gona game reserve">
+          <div class="overlay">Workshops</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/mutare.jpg" alt="mutare easter view">
+          <div class="overlay">Women in Business</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/panama.jpg" alt="panama water pool">
+          <div class="overlay">Innovation Summit</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="auth-section">
+      <h2>Join the Chamber</h2>
+      <p class="why-join">Join the Zimbabwe Chamber of Commerce to unlock a world of opportunity, mentorship, and visibility for your business. Together, we grow stronger.</p>
+
+      <form id="auth-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register / Login</button>
+      </form>
+    </aside>
+</main>
+ <footer>
+        <p>Zimbabwe Chamber of Commerce</p>
+        <p>Smoke That Thunders</p>
+        <p>Email: info@Zimbabwechamber.org | Phone: (263) 123-2300</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="images/social_facebook.webp" alt="facebook"></a>
+            <a href="https://www.Twitter.com/"><img src="images/social_twitter.webp" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="images/social_instagram.webp" alt="Instagram"></a>
+        </div>
+        <p>WDD 231 Class Project | Clive Tumbare</p>
+        <p>Last Modification:<p>&copy; <span id="currentyear"></span> &#128640; Clive Tumbare &#128640; Bulawayo, Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

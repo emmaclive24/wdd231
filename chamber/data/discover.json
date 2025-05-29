@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "ZimTech Solutions",
+      "membershipLevel": "Gold",
+      "address": "123 Harare Ave, Harare",
+      "phone": "+263 712 345 678",
+      "website": "https://zimtech.co.zw",
+      "logo": "images/zimtech.png"
+    },
+    {
+      "name": "Victoria Travel",
+      "membershipLevel": "Platinum",
+      "address": "456 Main Street, Victoria Falls",
+      "phone": "+263 779 123 456",
+      "website": "https://victoriatravel.co.zw",
+      "logo": "images/victoriatravel.png"
+    },
+    {
+      "name": "Chinhoyi Motors",
+      "membershipLevel": "Silver",
+      "address": "78 Chinhoyi Rd, Chinhoyi",
+      "phone": "+263 772 987 321",
+      "website": "https://chinhoyimotors.co.zw",
+      "logo": "images/chinhoyimotors.png"
+    },
+    {
+      "name": "Bulawayo Bakery",
+      "membershipLevel": "Gold",
+      "address": "9 Matopos Road, Bulawayo",
+      "phone": "+263 714 654 123",
+      "website": "https://byobakery.co.zw",
+      "logo": "images/byobakery.png"
+    },
+    {
+      "name": "Kariba Adventure Tours",
+      "membershipLevel": "Diamond",
+      "address": "Lake View Drive, Kariba",
+      "phone": "+263 777 333 888",
+      "website": "https://karibatours.co.zw",
+      "logo": "images/karibatours.png"
+    },
+    {
+      "name": "Mutare Furniture",
+      "membershipLevel": "Silver",
+      "address": "22 Vumba Rd, Mutare",
+      "phone": "+263 713 222 444",
+      "website": "https://mutarefurniture.co.zw",
+      "logo": "images/mutarefurniture.png"
+    },
+    {
+      "name": "Gweru Steel Works",
+      "membershipLevel": "Platinum",
+      "address": "18 Industrial Ave, Gweru",
+      "phone": "+263 775 111 222",
+      "website": "https://gwerusteel.co.zw",
+      "logo": "images/gwerusteel.png"
+    },
+    {
+      "name": "Masvingo Solar",
+      "membershipLevel": "Gold",
+      "address": "Solar Park, Masvingo",
+      "phone": "+263 718 888 999",
+      "website": "https://masvingosolar.co.zw",
+      "logo": "images/masvingosolar.png"
+    },
+    {
+      "name": "Hwange Power",
+      "membershipLevel": "Diamond",
+      "address": "Power Lane, Hwange",
+      "phone": "+263 765 987 654",
+      "website": "https://hwangepower.co.zw",
+      "logo": "images/hwangepower.png"
+    },
+    {
+      "name": "Kwekwe Mining Co.",
+      "membershipLevel": "Platinum",
+      "address": "Mimosa Rd, Kwekwe",
+      "phone": "+263 713 333 555",
+      "website": "https://kwekwemining.co.zw",
+      "logo": "images/kwekwe.png"
+    }
+  ]
+}
