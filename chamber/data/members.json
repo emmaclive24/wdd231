@@ -1,28 +1,65 @@
-{
-    "family name": "Tumbare",
-    "move-date": "2019-05-25",
-    "number-of-people": 3,
-    "visited-by-bishopric": false,
-    "family-members": [
-        {
-            "name": "Mbaerre",
-            "gender": "Female",
-            "birthdate": "1994-10-19"
-        },
-        {
-            "name": "Gaer",
-            "gender": "male",
-            "birthdate": "1980-01-18"
-        },
-        {
-            "name": "Charles dome",
-            "gender": "Male",
-            "birthdate": "2002-12-10"
-        },
-        {
-            "name": "Wares ",
-            "gender": "Male",
-            "birthdate": "1986-15-09"
-        }
-    ]
-}
+[
+    {
+        "name": "Timbuktu Traders",
+        "address": "123 Market Street, Timbuktu, MAI 999",
+        "phone": "800-555-1001",
+        "website": "www.timbuktutraders.com",
+        "image": "images/traders.jpg",
+        "membership": 3,
+        "description": "Local marketplace for unique goods"
+    },
+    {
+        "name": "Sahara Sands Hotel",
+        "address": "45 Oasis Road, Timbuktu, MAI 999",
+        "phone": "800-555-1002",
+        "website": "www.saharasands.com",
+        "image": "images/hotel.jpg",
+        "membership": 2,
+        "description": "Luxury accommodations in the heart of Timbuktu"
+    },
+    {
+        "name": "Nomad's Rest Cafe",
+        "address": "67 Caravan Lane, Timbuktu, MAI 999",
+        "phone": "800-555-1003",
+        "website": "www.nomadsrest.com",
+        "image": "images/cafe.jpg",
+        "membership": 1,
+        "description": "Authentic local cuisine and beverages"
+    },
+    {
+        "name": "Golden Dunes Tours",
+        "address": "89 Desert Way, Timbuktu, MAI 999",
+        "phone": "800-555-1004",
+        "website": "www.goldendunestours.com",
+        "image": "images/tours.jpg",
+        "membership": 3,
+        "description": "Guided tours of the Sahara"
+    },
+    {
+        "name": "Timbuktu Textiles",
+        "address": "101 Weaver's Alley, Timbuktu, MAI 999",
+        "phone": "800-555-1005",
+        "website": "www.timbuktutextiles.com",
+        "image": "images/textiles.jpg",
+        "membership": 2,
+        "description": "Traditional fabrics and clothing"
+    },
+    {
+        "name": "Oasis Tech Solutions",
+        "address": "202 Silicon Dunes, Timbuktu, MAI 999",
+        "phone": "800-555-1006",
+        "website": "www.oasistech.com",
+        "image": "images/tech.jpg",
+        "membership": 1,
+        "description": "IT services for local businesses"
+    },
+    {
+        "name": "Camel Caravans Ltd",
+        "address": "303 Expedition Road, Timbuktu, MAI 999",
+        "phone": "800-555-1007",
+        "website": "www.camelcaravans.com",
+        "image": "images/caravans.jpg",
+        "membership": 3,
+        "description": "Transportation and logistics services"
+    }
+]

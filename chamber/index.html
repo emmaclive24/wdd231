@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home of Clive Chamber of Commerce member businesses">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Clive Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-site-url/images/Clive-social.jpg">
+    <meta property="og:url" content="https://your-site-url/chamber/home.html">
+    <title>Clive Chamber of Commerce - Directory</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/Clive_logo.png" alt="Clive Chamber of Commerce Logo" width="200" height="100">
+                <div class="tim">
+                    <h1>Clive </h1>
+                    <p> Chamber of Commerce </p>
+                </div>
+            </div>
+            <button id="menu-button">☰</button>
+            <div class="overlay"></div>
+            <nav id="navigation">
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><img src="images/circle.jpeg" alt="Profile" width="30" height="30"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="directory-main">
+
+        <section class="hero">
+            <img src="images/chamber1.webp" alt="Chamber imgaes " width="1200" height="600">
+            <div class="call-to-action">
+                <button>Keynote Tickets</button>
+            </div>
+        </section>
+        <br>
+        <h1 class="home"> Home </h1>
+        <div class="boxs">
+            <div class="events">
+                <h2 class="eve">Events</h2>
+                <div>
+
+                </div>
+
+            </div>
+
+            <div class="weather">
+                <h3 class="cur">Current Weather</h3>
+                <div class="current">
+                    <img src="images/weather_icon.svg" alt="Sunny weather icon" width="100" height="100">
+                    <div >
+                        <p> 75° F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°</p>
+                        <p>Low: 52°</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fore">
+                <h3 class="wea">Weather Forecast</h3>
+                <div class="forecast">
+                    <p><span class="day">Today:</span> <span class="temp">90°F</span></p>
+                    <p><span class="day">Wednesday:</span> <span class="temp">89°F</span></p>
+                    <p><span class="day">Thursday:</span> <span class="temp">68°F</span></p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="directory-controls">
+            <h2>Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view" class="active">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+        </div>
+        <div id="member-cards" class="grid-view">
+            <!-- Member cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Clive Chamber of Commerce</h3>
+                <p>10 Main Street</p>
+                <p>Clive, BYO 0000</p>
+                <p>info@Clivecc.org</p>
+                <p>(263) 5255-2300</p>
+            </div>
+
+            <div class="social-media">
+                <img src="images/youtube_logo.webp" alt="Picture of Youtube" width="50" height="50">
+                <img src="images/twitter_logo.webp" alt="Picture of Twitter" width="50" height="50">
+                <img src="images/linkedin_logo.webp" alt="Picture of linkedin" width="50" height="50">
+
+            </div>
+
+
+            <div class="dev-info">
+                <p>&copy;<span id="copyright-year"></span> Clive Chamber of Commerce</p>
+                <p>Clive Tumbare</p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
