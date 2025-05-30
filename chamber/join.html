@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,7 +93,7 @@
                 <h3>Gold Membership</h3>
                 <button onclick="openModal('modal-gold')">More Info</button>
             </div>
-        </section> -->
+        </section> 
 
     <section class="form-container">
       <h2>Membership Application</h2>
@@ -160,7 +160,7 @@
       </div>
     </section>
 
-    <!-- Modals -->
+    
     <div id="modal-np" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-np')">&times;</span><h2>NP Membership Benefits</h2><ul><li>Free membership for nonprofits</li><li>Basic directory listing</li><li>Community events participation</li></ul></div></div>
     <div id="modal-bronze" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-bronze')">&times;</span><h2>Bronze Membership Benefits</h2><ul><li>Event discounts</li><li>Newsletter spotlights</li><li>Networking events</li></ul></div></div>
     <div id="modal-silver" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-silver')">&times;</span><h2>Silver Membership Benefits</h2><ul><li>Homepage listing</li><li>Advertising</li><li>Priority training access</li></ul></div></div>
@@ -181,4 +181,132 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply for membership in the Zimbabwe Chamber of Commerce and support your local business community." />
+  <meta name="author" content="Clive Tumbare" />
+  
+  <meta property="og:title" content="Join the Zimbabwe Chamber of Commerce" />
+  <meta property="og:description" content="Become a member of the Zimbabwe Chamber of Commerce. Choose from nonprofit, bronze, silver, or gold membership levels." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/world.ico" />
+  <meta property="og:url" content="https://zimbabwechamber.org/join.html" />
+  
+  <title>Join the Zimbabwe Chamber of Commerce</title>
+  <link rel="icon" href="images/world.ico" />
+  <link rel="stylesheet" href="styles/join-style.css" />
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/members.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Zimbabwe Chamber of Commerce" class="logo" />
+      <button class="hamburger" id="menu-toggle">☰</button>
+      <nav id="nav-menu" class="hidden">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Join the Zimbabwe Chamber of Commerce</h1>
+
+    <section class="form-container">
+      <h2>Membership Application Form</h2>
+      <form action="thankyou.html" method="get">
+        <label>
+          First Name:
+          <input type="text" name="firstname" required title="First Name" autocomplete="given-name" />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="lastname" required title="Last Name" autocomplete="family-name" />
+        </label>
+        <label>
+          Organizational Title:
+          <input type="text" name="orgtitle" title="Your Title in the Organization" autocomplete="organization-title" pattern="[A-Za-z\\- ]{7,}" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required title="Your Email Address" autocomplete="email" placeholder="example@email.com" />
+        </label>
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required title="Your Mobile Number" autocomplete="tel" />
+        </label>
+        <label>
+          Business Name:
+          <input type="text" name="organization" required title="Business or Organization Name" autocomplete="organization" />
+        </label>
+        <label>
+          Membership Level:
+          <select name="membership" title="Select a Membership Level" required>
+            <option value="">-- Select a Membership Level --</option>
+            <option value="NP">NP Membership (Free for Nonprofits)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </label>
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe your business"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp" />
+        <input type="submit" value="Submit Membership Application" />
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card" id="np">
+        <h3>NP Membership</h3>
+        <button onclick="openModal('modal-np')">More Info</button>
+      </div>
+      <div class="card" id="bronze">
+        <h3>Bronze Membership</h3>
+        <button onclick="openModal('modal-bronze')">More Info</button>
+      </div>
+      <div class="card" id="silver">
+        <h3>Silver Membership</h3>
+        <button onclick="openModal('modal-silver')">More Info</button>
+      </div>
+      <div class="card" id="gold">
+        <h3>Gold Membership</h3>
+        <button onclick="openModal('modal-gold')">More Info</button>
+      </div>
+    </section>
+
+    <!-- Modals (Same structure retained) -->
+    <div id="modal-np" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-np')">&times;</span><h2>NP Membership Benefits</h2><ul><li>Free membership for nonprofits</li><li>Basic directory listing</li><li>Community events participation</li></ul></div></div>
+    <div id="modal-bronze" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-bronze')">&times;</span><h2>Bronze Membership Benefits</h2><ul><li>Event discounts</li><li>Newsletter spotlights</li><li>Networking events</li></ul></div></div>
+    <div id="modal-silver" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-silver')">&times;</span><h2>Silver Membership Benefits</h2><ul><li>Homepage listing</li><li>Advertising</li><li>Priority training access</li></ul></div></div>
+    <div id="modal-gold" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-gold')">&times;</span><h2>Gold Membership Benefits</h2><ul><li>Sponsorship</li><li>Leadership training</li><li>Top-tier benefits</li></ul></div></div>
+  </main>
+
+  <footer>
+    <p>Zimbabwe Chamber of Commerce</p>
+    <p>Bulawayo – City of Kings</p>
+    <p>Email: info@Zimbabwechamber.org | Phone: (263) 123-2345</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/"><img src="images/social_facebook.webp" alt="Facebook" /></a>
+      <a href="https://www.twitter.com/"><img src="images/social_twitter.webp" alt="Twitter" /></a>
+      <a href="https://www.instagram.com"><img src="images/social_instagram.webp" alt="Instagram" /></a>
+    </div>
+    <p>WDD 231 Class Project | Clive Tumbare</p>
+    <p>&copy; <span id="currentyear"></span> Clive Tumbare | Bulawayo, Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+
+
+</body>
 </html>
+
