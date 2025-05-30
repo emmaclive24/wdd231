@@ -19,6 +19,7 @@
   <script src="scripts/date.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/members.js" defer></script>
+  <script src="scripts/modal.js" defer><scripts>
 </head>
 <body>
   <header>
@@ -122,11 +123,5 @@
     <p>&copy; <span id="currentyear"></span> Clive Tumbare | Bulawayo, Zimbabwe</p>
     <p id="lastModified"></p>
   </footer>
-
-<script>
-    document.getElementById("timestamp").value = new Date().toISOString();
-    function openModal(id) { document.getElementById(id).style.display = "flex"; }
-    function closeModal(id) { document.getElementById(id).style.display = "none"; }
-  </script>
 </body>
 </html>
