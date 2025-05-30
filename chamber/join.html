@@ -13,6 +13,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <title>JOIN Chamber page</title>
     <link rel="icon" href="images/world.ico">
 </head>
@@ -30,7 +31,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main><!-- 
         <section class="form-container">
             <h2>Membership Application</h2>
             <form action="thankyou.html" method="get">
@@ -92,7 +93,79 @@
                 <h3>Gold Membership</h3>
                 <button onclick="openModal('modal-gold')">More Info</button>
             </div>
-        </section>
+        </section> -->
+
+    <section class="form-container">
+      <h2>Membership Application</h2>
+      <form action="thankyou.html" method="get">
+        <label>
+          First Name:
+          <input type="text" name="firstname" required title="First Name" autocomplete="given-name" />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="lastname" required title="Last Name" autocomplete="family-name" />
+        </label>
+        <label>
+          Organizational Title:
+          <input type="text" name="orgtitle" title="Organization Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@email.com" />
+        </label>
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required title="Mobile Phone Number" autocomplete="tel" />
+        </label>
+        <label>
+          Business Name:
+          <input type="text" name="organization" required title="Business or Organization Name" autocomplete="organization" />
+        </label>
+        <label>
+          Membership Level:
+          <select name="membership" title="Membership Level" required>
+            <option value="">Select a membership level</option>
+            <option value="NP">NP Membership (Free)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </label>
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe Your Business"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp" />
+        <input type="submit" value="Submit Application" />
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card" id="np">
+        <h3>NP Membership</h3>
+        <button onclick="openModal('modal-np')">More Info</button>
+      </div>
+      <div class="card" id="bronze">
+        <h3>Bronze Membership</h3>
+        <button onclick="openModal('modal-bronze')">More Info</button>
+      </div>
+      <div class="card" id="silver">
+        <h3>Silver Membership</h3>
+        <button onclick="openModal('modal-silver')">More Info</button>
+      </div>
+      <div class="card" id="gold">
+        <h3>Gold Membership</h3>
+        <button onclick="openModal('modal-gold')">More Info</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-np" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-np')">&times;</span><h2>NP Membership Benefits</h2><ul><li>Free membership for nonprofits</li><li>Basic directory listing</li><li>Community events participation</li></ul></div></div>
+    <div id="modal-bronze" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-bronze')">&times;</span><h2>Bronze Membership Benefits</h2><ul><li>Event discounts</li><li>Newsletter spotlights</li><li>Networking events</li></ul></div></div>
+    <div id="modal-silver" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-silver')">&times;</span><h2>Silver Membership Benefits</h2><ul><li>Homepage listing</li><li>Advertising</li><li>Priority training access</li></ul></div></div>
+    <div id="modal-gold" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('modal-gold')">&times;</span><h2>Gold Membership Benefits</h2><ul><li>Sponsorship</li><li>Leadership training</li><li>Top-tier benefits</li></ul></div></div>
+ 
     </main>
     <footer>
         <p>Zimbabwe Chamber of Commerce</p>
