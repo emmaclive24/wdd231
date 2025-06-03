@@ -1,125 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home of Clive Chamber of Commerce member businesses">
-    <meta name="author" content="Clive Tumbare">
-    <meta property="og:title" content="Clive Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://your-site-url/images/Clive-social.jpg">
-    <meta property="og:url" content="https://your-site-url/chamber/home.html">
-    <title>Clive Chamber of Commerce - Home</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home of Clive Chamber of Commerce member businesses">
+  <meta name="author" content="Clive Tumbare">
+  <meta property="og:title" content="Clive Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-site-url/images/Clive-social.jpg">
+  <meta property="og:url" content="https://your-site-url/chamber/home.html">
+  <title>Clive Chamber of Commerce - Home</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 3 / 2;
+    }
+    .cta-button {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+    .navigation {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .navigation a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
 </head>
-
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="images/Clive_logo.webp" alt="Clive Chamber Logo" width="200" height="100">
-                <div class="tim">
-                    <h1>Clive</h1>
-                    <p>Chamber of Commerce</p>
-                </div>
-            </div>
-            <button id="menu-button" aria-label="Toggle navigation">☰</button>
-            <div class="overlay"></div>
-            <nav id="navigation">
-                <ul class="navigation">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><img src="images/circle.webp" alt="Profile Icon" width="30" height="30"></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/Clive_logo.webp" alt="Clive Chamber Logo" width="200" height="100">
+        <div class="tim">
+          <h1>Clive</h1>
+          <p>Chamber of Commerce</p>
         </div>
-    </header>
+      </div>
+      <button id="menu-button" aria-label="Toggle navigation">☰</button>
+      <div class="overlay"></div>
+      <nav id="navigation">
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><img src="images/circle.webp" alt="Profile Icon" width="30" height="30"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="directory-main">
-        <section class="hero">
-            <picture>
-                <source srcset="images/chamber1-small.webp" media="(max-width: 600px)">
-                <img src="images/chamber1.webp" alt="Chamber building" width="1200" height="600">
-            </picture>
-            <div class="call-to-action">
-                <a href="join.html" class="cta-button">Join Now</a>
-            </div>
-        </section>
+  <main class="directory-main">
+    <section class="hero">
+      <picture>
+        <source srcset="images/chamber1-highres.webp" media="(min-width: 1024px)">
+        <source srcset="images/chamber1-small.webp" media="(max-width: 600px)">
+        <img src="images/chamber1.webp" alt="Chamber building" width="1200" height="800">
+      </picture>
+      <div class="call-to-action">
+        <a href="join.html" class="cta-button">Join Now</a>
+      </div>
+    </section>
 
-        <h1 class="home">Home</h1>
-
-        <div class="boxs">
-            <section class="events">
-                <h2>Events</h2>
-                <p>Upcoming events will be listed here soon.</p>
-            </section>
-
-            <section class="weather">
-                <h3>Current Weather</h3>
-                <div class="weather-data">
-                    <p id="town"></p>
-                    <img id="graphic" alt="weather icon" />
-                    <p id="description"></p>
-                    <p id="temperature"></p>
-                    <p>Humidity: <span id="humidity"></span>%</p>
-                </div>
-            </section>
-
-            <section class="forecast">
-                <h3>3-Day Forecast</h3>
-                <div id="forecast">
-                    <!-- Weather forecast from API -->
-                </div>
-            </section>
+    <h1 class="home">Home</h1>
+    <div class="boxs">
+      <section class="events">
+        <h2>Events</h2>
+        <p>Upcoming events will be listed here soon.</p>
+      </section>
+      <section class="weather">
+        <h3>Current Weather</h3>
+        <div class="weather-data">
+          <p id="town"></p>
+          <img id="graphic" alt="weather icon" />
+          <p id="description"></p>
+          <p id="temperature"></p>
+          <p>Humidity: <span id="humidity"></span>%</p>
         </div>
+      </section>
+      <section class="forecast">
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+      </section>
+    </div>
 
-        <section class="directory-controls">
-            <h2>Member Directory</h2>
-            <div class="view-toggle">
-                <button id="grid-view" class="active">Grid View</button>
-                <button id="list-view">List View</button>
-            </div>
-        </section>
+    <section class="directory-controls">
+      <h2>Member Directory</h2>
+      <div class="view-toggle">
+        <button id="grid-view" class="active">Grid View</button>
+        <button id="list-view">List View</button>
+      </div>
+    </section>
+    <section id="member-cards" class="grid-view"></section>
+  </main>
 
-        <section id="member-cards" class="grid-view">
-            <!-- JS injects spotlighted Gold/Silver members here -->
-        </section>
-    </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Clive Chamber of Commerce</h3>
+        <p>10 Main Street, Clive, BYO 0000</p>
+        <p>Email: info@Clivecc.org | Phone: (263) 5255-2300</p>
+      </div>
+      <div class="social-media">
+        <img src="images/youtube_logo.webp" alt="Youtube" width="40" height="40">
+        <img src="images/twitter_logo.webp" alt="Twitter" width="40" height="40">
+        <img src="images/linkedin_logo.webp" alt="LinkedIn" width="40" height="40">
+      </div>
+      <div class="dev-info">
+        <p>&copy;<span id="copyright-year"></span> Clive Chamber of Commerce</p>
+        <p>Clive Tumbare — WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Clive Chamber of Commerce</h3>
-                <p>10 Main Street, Clive, BYO 0000</p>
-                <p>Email: info@Clivecc.org | Phone: (263) 5255-2300</p>
-            </div>
-
-            <div class="social-media">
-                <img src="images/youtube_logo.webp" alt="Youtube" width="40" height="40">
-                <img src="images/twitter_logo.webp" alt="Twitter" width="40" height="40">
-                <img src="images/linkedin_logo.webp" alt="LinkedIn" width="40" height="40">
-            </div>
-
-            <div class="dev-info">
-                <p>&copy;<span id="copyright-year"></span> Clive Chamber of Commerce</p>
-                <p>Clive Tumbare — WDD 231</p>
-                <p>Last Modified: <span id="last-modified"></span></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
-
 </html>
