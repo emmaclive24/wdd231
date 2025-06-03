@@ -13,6 +13,37 @@
     box-sizing: border-box;
 }
 
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 3 / 2;
+    }
+    .cta-button {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+    .navigation {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .navigation a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -31,6 +62,8 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10rem;
+     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-content {
