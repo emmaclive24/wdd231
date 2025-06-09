@@ -1,115 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Commerce members businesses and chamber of Commerce, a community group eager to Explore trusted Zimbabwean businesses and connect with the Chamber. Discover tourism, member benefits, and more.">
-  <meta name="author" content="Clive Tumbare">
-  <meta property="og:title" content="Clive Chamber of Commerce">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://your-site-url/images/Clive-social.jpg">
-  <meta property="og:url" content="https://emmaclive24.github.io/wdd231/chamber/">
-  <title>Clive Chamber of Commerce - Home</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </noscript>
-
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clive Chamber of Commerce - Supporting local businesses and community growth in Clive. Join our thriving business community today.">
+    <meta name="author" content="Clive Tumbare">
+    <meta property="og:title" content="Clive Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Supporting local businesses and community growth in Clive">
+    <meta property="og:image" content="images/chamber-social.jpg">
+    <meta property="og:url" content="https://clivechamber.org">
+    <title>Clive Chamber of Commerce - Home</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <img src="images/clive_logo.webp" alt="Clive Chamber Logo" width="200" height="100">
-        <div class="tim">
-          <h1>Clive</h1>
-          <p>Chamber of Commerce</p>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/Clive_logo.png" alt="Clive Chamber of Commerce Logo" width="80" height="60">
+                    <div class="logo-text">
+                        <h1>Clive Chamber</h1>
+                        <p>of Commerce</p>
+                    </div>
+                </div>
+
+                <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <nav class="nav" id="navigation" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                        <li><a href="#directory" class="nav-link">Directory</a></li>
+                        <li><a href="#join" class="nav-link">Join</a></li>
+                        <li><a href="#discover" class="nav-link">Discover</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
-      <button id="menu-button" aria-label="Toggle navigation">☰</button>
-      <div class="overlay"></div>
-      <nav id="navigation">
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><img src="images/circle.webp" alt="Profile Icon" width="30" height="30"></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="directory-main">
-    <section class="hero">
-      <picture>      
-    <img src="images/chamber1.webp" alt="Chamber building" width="1200" height="800">
-      </picture>
-      <div class="call-to-action">
-        <a href="join.html" class="cta-button">Join Now</a>
-      </div>
-    </section>
+    <main id="home">
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/chamber1.webp" alt="Clive Chamber of Commerce building and community" loading="lazy">
+            </div>
+            <div class="hero-content">
+                <h2>Welcome to Clive Chamber of Commerce</h2>
+                <p>Supporting local businesses and community growth</p>
+                <a href="#join" class="cta-button">Join Our Chamber</a>
+            </div>
+        </section>
 
-    <h1 class="home">Chamber of Commerce Home</h1>
-    <div class="boxs">
-      <section class="events">
-        <h2>Events</h2>
-        <p>Upcoming events will be listed here soon.</p>
-      </section>
-      <section class="weather">
-        <h3>Current Weather</h3>
-        <div class="weather-data">
-          <p id="town"></p>
-          <img id="graphic" alt="weather icon">
-          <p id="description"></p>
-          <p id="temperature"></p>
-          <p>Humidity: <span id="humidity"></span>%</p>
+        <div class="container">
+            <section class="main-content">
+                <article class="current-events">
+                    <h2>Current Events</h2>
+                    <div class="event-card">
+                        <h3>Annual Business Expo 2024</h3>
+                        <p class="event-date">March 15, 2024</p>
+                        <p>Join us for our biggest networking event of the year. Connect with local businesses and discover new opportunities.</p>
+                        <a href="#" class="event-link">Learn More</a>
+                    </div>
+                    <div class="event-card">
+                        <h3>Small Business Workshop</h3>
+                        <p class="event-date">March 22, 2024</p>
+                        <p>Free workshop covering marketing strategies, financial planning, and growth techniques for small businesses.</p>
+                        <a href="#" class="event-link">Register Now</a>
+                    </div>
+                </article>
+
+                <aside class="weather-section">
+                    <h2>Current Weather</h2>
+                    <div class="weather-current" id="current-weather">
+                        <div class="weather-loading">Loading weather data...</div>
+                    </div>
+                      <h3>3-Day Forecast</h3>
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-loading">Loading forecast...</div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="member-spotlight" id="directory">
+                <h2>Featured Members</h2>
+                <p>Showcasing our Gold and Silver level members</p>
+                <div class="spotlight-grid" id="member-spotlight">
+                    <div class="loading">Loading member information...</div>
+                </div>
+            </section>
         </div>
-      </section>
-      <section class="forecast">
-        <h3>3-Day Forecast</h3>
-        <div id="forecast"></div>
-      </section>
-    </div>
+    </main>
 
-    <section class="directory-controls">
-      <h2>Member Directory</h2>
-      <div class="view-toggle">
-        <button id="grid-view" class="active">Grid View</button>
-        <button id="list-view">List View</button>
-      </div>
-    </section>
-    <section id="member-cards" class="grid-view"></section>
-  </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Clive Chamber of Commerce</h3>
+                    <address>
+                        <p>10 Main Street</p>
+                        <p>Clive, IA 50325</p>
+                        <p><a href="mailto:info@clivechamber.org">info@clivechamber.org</a></p>
+                        <p><a href="tel:+15155552300">(515)5552300</a></p>
+                    </address>
+                </div>
 
-  <footer>
-    <div class="footer-content">
-      <div class="contact-info">
-        <h3>Clive Chamber of Commerce</h3>
-        <p>10 Main Street, Clive, BYO 0000</p>
-        <p>Email: info@Clivecc.org | Phone: (263) 5255-2300</p>
-      </div>
-      <div class="social-media">
-        <img src="images/youtube_logo.webp" alt="Youtube" width="40" height="40">
-        <img src="images/twitter_logo.webp" alt="Twitter" width="40" height="40">
-        <img src="images/linkedin_logo.webp" alt="LinkedIn" width="40" height="40">
-      </div>
-      <div class="dev-info">
-        <p>&copy;<span id="copyright-year"></span> Clive Chamber of Commerce</p>
-        <p>Clive Tumbare — WDD 231</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
-      </div>
-    </div>
-  </footer>
+                <div class="social-media">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="YouTube">
+                            <img src="images/youtube_logo.webp" alt="YouTube" width="40" height="40">
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="images/twitter_logo.webp" alt="Twitter" width="40" height="40">
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="images/linkedin_logo.webp" alt="LinkedIn" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
 
- 
+                <div class="dev-info">
+                    <p>&copy;<span id="copyright-year"></span> Clive Chamber of Commerce</p>
+                    <p>Developed by Clive Tumbare</p>
+                    <p>WDD 231 - Web Frontend Development I</p>
+                    <p>Last Modified: <span id="last-modified"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
