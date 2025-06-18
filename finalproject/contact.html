@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Contact Form @travelagent</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+   <!-- JavaScript file -->
+    <script src="assets/js/contact.js"></script>
+<link rel="icon" type="image/x-icon" href="./assets/images/worldwide-travel-svgrepo-com.svg">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Fill up the form to get in touch with us. </p>
+
+        <!-- Contact form section -->
+        <div class="contact-box">
+            <!-- Left side of the form -->
+            <div class="container-left">
+                <h3>Fill the Form*</h3>
+                <!-- Form -->
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name*</label>
+                            <input type="text" id="name" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone*</label>
+                            <input type="text" id="phone" placeholder="+263 1234567890" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Input row for Email and Subject -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email*</label>
+                            <input type="email" id="email" placeholder="youremail@gmail.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" id="subject" placeholder="Inquiry">
+                        </div>                       
+                    </div>
+
+                    <!-- Label for Message textarea -->
+                    <label>Message*</label>
+                    <textarea rows="10" id="message" placeholder="Enter your Message" required></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <!-- Right side with contact information -->
+            <div class="container-right">
+                <h3>Reach Us</h3>
+                <!-- Table for contact information -->
+                <table>
+                    <tr>
+                        <td>Email: </td>
+                        <td>contact@travelagent.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone: </td>
+                        <td>+263-45656183</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address: </td>
+                        <td>Emma travelagent <br>
+                            C-4, Bulawayo, <br>
+                            Byo - 110058, zimbabwe</td>
+                    </tr>
+                </table>
+                
+                <!-- Map section -->
+                <div class="map">
+                    <!-- Google Map iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29960.71943722756!2d28.59008!3d-20.1719808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1750252337593!5m2!1sen!2szw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

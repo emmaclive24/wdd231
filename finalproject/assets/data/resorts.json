@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Victoria Falls Safari Lodge",
+    "address": "Stand 471 Squire Cummings Road, Victoria Falls"
+  },
+  {
+    "name": "Matobo Hills Lodge",
+    "address": "Matobo National Park, Matabeleland South"
+  },
+  {
+    "name": "Nyanga Troutbeck Resort",
+    "address": "Nyanga National Park, Eastern Highlands"
+  },
+  {
+    "name": "Bumi Hills Safari Lodge",
+    "address": "Lake Kariba, Mashonaland West"
+  },
+  {
+    "name": "Pamushana Lodge",
+    "address": "Malilangwe Wildlife Reserve, Chiredzi"
+  },
+  {
+    "name": "Caribbea Bay Resort",
+    "address": "Caribbea Bay, Lake Kariba"
+  },
+  {
+    "name": "Hwange Safari Lodge",
+    "address": "Hwange National Park, Hwange"
+  },
+  {
+    "name": "Great Zimbabwe Hotel",
+    "address": "Masvingo, near Great Zimbabwe ruins"
+  },
+  {
+    "name": "Chilo Gorge Safari Lodge",
+    "address": "Gonarezhou National Park, Chiredzi"
+  },
+  {
+    "name": "Chengeta Safari Lodge",
+    "address": "Selous, 80 km from Harare"
+  },
+  {
+    "name": "Amanzi Lodge",
+    "address": "1 Masasa Lane, Harare"
+  },
+  {
+    "name": "Big Cave Camp",
+    "address": "Matobo Hills, Matopos"
+  },
+  {
+    "name": "Meikles Hotel",
+    "address": "Corner Jason Moyo Ave & Third Street, Harare"
+  },
+  {
+    "name": "Ilala Lodge",
+    "address": "411 Livingstone Way, Victoria Falls"
+  },
+  {
+    "name": "Troutbeck Resort",
+    "address": "Nyanga Highlands, Manicaland"
+  }
+]
