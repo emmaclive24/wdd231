@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emat Travel Agency | Book Your Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="assets\js\booking.js"></script>
+<link rel="stylesheet" href="assets/css/booking.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Emat Travel Agency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Explore Zimbabwe with Emat Travel</h1>
+      <p>Your journey begins here.</p>
+    </section>
+
+    <section id="destinations">
+      <h2>Top Zimbabwe Destinations</h2>
+      <div class="destination-grid">
+        <div class="card">
+          <img src="/assets/images/victoria_falls.webp" alt="Victoria Falls">
+          <h3>Victoria Falls</h3>
+          <p>The Smoke That Thunders – a wonder of the world.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/images/rainbow-hotel-victoria.webp" alt="beautiful rainbow hotel">
+          <h3>Matobo Hills</h3>
+          <p>Granite scenery and ancient rock art.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/images/bumi_safaris_4.webp" alt="bumi safaris">
+          <h3>Great Zimbabwe</h3>
+          <p>Ancient stone city and cultural heritage site.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Book Your Trip</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="destination">Destination</label>
+        <select id="destination">
+          <option value="victoria">Victoria Falls</option>
+          <option value="matobo">rainbow-hotel</option>
+          <option value="zimbabwe">Bumi Safaris</option>
+        </select>
+
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" max="10">
+
+        <button type="submit">Submit Booking</button>
+      </form>
+
+      <table>
+        <caption>Pricing Table</caption>
+        <thead>
+          <tr>
+            <th>Destination</th>
+            <th>Package</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Victoria Falls</td>
+            <td>3 Days / 2 Nights</td>
+            <td>$450</td>
+          </tr>
+          <tr>
+            <td>Rainbow Hote</td>
+            <td>2 Days / 1 Night</td>
+            <td>$320</td>
+          </tr>
+          <tr>
+            <td>Bumi Safaris</td>
+            <td>4 Days / 3 Nights</td>
+            <td>$500</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <div class="weather">
+      <h4>Current Weather in Harare</h4>
+      <div id="weather-info">Loading weather...</div>
+    </div>
+
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2025 Emat Travel Agency. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
