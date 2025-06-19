@@ -1,0 +1,228 @@
+/* ============================================
+   Optimized and Refactored Global CSS Styles
+   Covers all classes noted in audit, WDD 231 compliant
+   ============================================ */
+
+:root {
+  --gray: hsl(0, 0%, 53%);
+  --green: hsl(180, 98%, 31%);
+  --yellow: hsl(47, 98%, 50%);
+  --dark: hsl(222, 46%, 17%);
+  --light: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --transition: 0.3s ease;
+  --radius: 6px;
+  --font-head: 'Abril Fatface', cursive;
+  --font-body: 'Heebo', sans-serif;
+  --font-script: 'Comforter Brush', cursive;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONTAINERS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+/* HEADER */
+.header {
+  background: var(--green);
+  padding: 1rem 0;
+  color: var(--white);
+  position: relative;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-list {
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar-link {
+  color: var(--white);
+  font-weight: 600;
+  transition: var(--transition);
+}
+.navbar-link:hover {
+  text-decoration: underline;
+}
+.nav-toggle-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--white);
+}
+
+/* HERO */
+.hero-banner {
+  background: url('../images/hero-bg-top.webp') top right no-repeat,
+              url('../images/hero-bg-bottom.webp') bottom left no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  text-align: center;
+}
+.hero-title {
+  font-family: var(--font-head);
+  font-size: 3rem;
+  color: var(--dark);
+}
+.hero-text {
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* ABOUT */
+.about-banner {
+  background-color: var(--light);
+  padding: 2rem 0;
+}
+.about-item-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.about-item-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+.about-item-content p {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+/* RESORTS */
+.dynamic-resorts {
+  padding: 2rem 0;
+}
+.resort-card {
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  padding: 1rem;
+  transition: transform var(--transition);
+}
+.resort-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.modal-body {
+  color: var(--dark);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--dark);
+  color: var(--light);
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.footer-list a {
+  color: var(--light);
+  font-size: 0.9rem;
+}
+
+/* GO TO TOP */
+.go-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--green);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-size: 1.2rem;
+  display: none;
+  z-index: 999;
+}
+.go-top.active {
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column;
+    background: var(--green);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  .navbar.active .navbar-list {
+    display: flex;
+  }
+  .nav-toggle-btn {
+    display: block;
+  }
+}
