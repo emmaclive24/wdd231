@@ -1,286 +1,176 @@
-/* General Reset and Basic Styling */
-* {
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #2b2447;
-}
-
-/* Header */
-header {
-    background-color: #2b2447;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    flex-wrap: wrap; /* Allows elements to wrap properly */
+    flex-direction: column;
 }
 
-.logo {
-    width: 60px; /* Reduce size */
-    height: auto;
-    margin-right: 10px;
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    position: relative;
 }
 
 h1 {
-    font-size: 1.5rem; /* Adjust title size */
-    text-align: center;
-    flex-grow: 1; /* Push elements apart */
+    margin-bottom: 20px;
 }
 
-
-nav {
-    position: relative; /* Instead of absolute */
-    display: none; 
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-
-nav.active {
-    display: flex; /* Show when active */
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: #dbcf25;
-}
-
-/* Hamburger Button Styling */
-button.hamburger {
-    display: block;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
-}
-
-button.hamburger:focus {
-    outline: none;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-}
-
-
-
-/* Form Section */
-.form-container {
-    background-color: white;
-    padding: 30px;
-    max-width: 600px;
-    margin: 40px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin: 10px 0;
-}
-
-form input, form select, form textarea {
+.skeleton {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+    animation: 1.5s ease-in-out infinite pulse;
+    opacity: 0;
+    height: 451px;
 }
 
-button {
-    background-color: #2b2447;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #003f7f;
-}
-
-/* Membership Cards */
-.membership-cards {
+#card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 900px;
-    margin: 40px auto;
 }
 
 .card {
-    background-color: #fff;
+    box-shadow: 0 0 10px #0000002b;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card h3 {
-    color: #2b2447;
-}
-
-/* Footer */
-footer {
-    background-color: #2b2447;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-
-
-.discover-layout {
     display: grid;
     grid-template-areas:
-        "cards"
-        "sidebar";
-    gap: 20px;
-    padding: 20px;
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: #eee;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    grid-area: title;
 }
 
-.cards-container {
-    grid-area: cards;
-    display: grid;
-    gap: 20px;
+.card figure {
+    margin-bottom: 10px;
+    grid-area: image;
 }
 
-/* Responsive Grid Templates */
-@media (min-width: 641px) {
-    .discover-layout {
-        grid-template-areas:
-            "sidebar cards";
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card address {
+    margin-bottom: 10px;
+    grid-area: address;
+}
+
+.card p {
+    margin-bottom: 20px;
+    grid-area: description;
+}
+
+.card .btn {
+    padding: 10px 20px;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 10px;
+    grid-area: button;
+    align-items: center;
+    max-height: 50px;
+}
+
+.alert {
+    display: none;
+    background-color: #d5daff;
+    border: 1px solid #adb3e0;
+    color: var(--primary-color);
+    padding: 10px 45px 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1000;
+    margin: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+.alert.show {
+    display: flex;
+    animation: 0.3s ease-in fadeIn;
+    animation-fill-mode: forwards;
+}
+
+.close-message::after {
+    content: "\00d7";
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Medium Screens */
+@media screen and (min-width: 641px) {
+    .card {
         grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image button";
     }
-
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1025px) {
-    .cards-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (min-width: 641px) {
-    .card img {
-        transition: transform 0.3s ease;
-    }
-
-    .card img:hover {
-        transform: scale(1.05);
-    }
-}
-
-
-/* Media Query for Larger Screens */
-@media (min-width: 601px) {
-    nav {
+    .card figure {
+        margin-right: 20px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
     }
-
-    button.hamburger {
-        display: none;
+    .card img {
+        width: 300px;
+        height: 200px;
+        transition: all 0.1s linear;
+    }
+    .card img:hover {
+        transform: scale(105%);
+    }
+    .card .btn {
+        padding: 10px 30px;
     }
 }
-/* Reset + Basic Styling */
 
-
-.gallery-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-/* Gallery Grid */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Individual Gallery Item */
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.gallery-item img {
-  display: block;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-/* Overlay Text */
-.gallery-item .overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  width: 100%;
-  padding: 10px 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 1.1rem;
-}
-
-/* Hover Effects */
-.gallery-item:hover img {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
+/* Large Screens */
+@media screen and (min-width: 1025px) {
+    .skeleton {
+        height: 285px;
+    }
+    #card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        grid-template-areas:
+            "title title"
+            "image address"
+            "image description"
+            "image button";
+    }
 }
